@@ -8,6 +8,7 @@ $(document).on('click', '.addNumber', function () {
       array.val( array.val() + ','+ key);
     }
 });
+
 $(document).on('click', '.getAns', function () {
     var key1 = $('#arrayAvalues').val().split(",");
     var returnObj = {};
@@ -23,12 +24,33 @@ $(document).on('click', '.getAns', function () {
   });
     $('.occuranceTable').append(data);
 });
-/*$(document).ready(function(){
-    $("#panel").hide();
-    $("#panel1").hide();
-  $("#flip1").click(function(){
-    $("#panel1").slideToggle("slow");
-  });
-});*/
+
+
+$(document).on('click','.getAnsq3',function(){
+     var key = $('#arrayAvalues').val();
+     var data = '';var returnObj = {};
+        $.ajaxSetup({
+          headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+        }); 
+       jQuery.ajax({
+          url: '/q3/ans',
+          method: 'POST',
+          data: {
+             key: key
+          },
+          success: function(result){
+          if(result == ''){
+            data+="<tr><td>No Data Found</td></tr>";
+          }else{
+            $.each(result, function(key,value) {
+                var digits = (""+value).split("");
+                data+="<tr><td>"+(key+1)+"</td><td>"+digits+"</td>";
+            });
+          }     
+            $('.occuranceTable').append(data);
+
+          }
+      });
+});
 
 

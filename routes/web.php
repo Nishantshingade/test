@@ -25,9 +25,23 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/employee/new', function () {
     return view('employee.new');
 })->name('employee.new');
+Route::middleware(['auth:sanctum', 'verified'])->get('/q1', function () {
+    return view('question.one');
+})->name('question.one');
 Route::middleware(['auth:sanctum', 'verified'])->get('/q2', function () {
     return view('question.two');
-})->name('employee.new');
+})->name('question.two');
+Route::middleware(['auth:sanctum', 'verified'])->get('/q3', function () {
+    return view('question.three');
+})->name('question.three');
+Route::post('/q3/ans', 'App\Http\Controllers\CompanyController@q3')->name('q3.ans');
+Route::middleware(['auth:sanctum', 'verified'])->get('/q4', function () {
+    return view('question.four');
+})->name('question.four');
+Route::middleware(['auth:sanctum', 'verified'])->get('/q6', function () {
+    return view('question.six');
+})->name('question.six');
+
 Route::post('/employee/create', 'App\Http\Controllers\CompanyController@store')->name('createEmployee');
 
 

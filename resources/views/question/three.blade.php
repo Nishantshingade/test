@@ -42,14 +42,17 @@
                     </div>
                 </div>
             <hr>
+            <form name="" method="post">
                 <div class="row">
-                    <div class="col-12">
-                        <input type="text" name="arrayAvalues" id="arrayAvalues" class="form-control" disabled>
-                    </div>
-                    <div class="col-12 p-2">
-                        <a href="#" class="btn btn-success getAns">Get Answer</a>
-                    </div>
+                    @csrf
+                        <div class="col-12">
+                            <input type="text" name="arrayAvalues" id="arrayAvalues" class="form-control" disabled>
+                        </div>
+                        <div class="col-12 p-2">
+                            <a href="#" class="btn btn-success getAnsq3">Get Answer</a>
+                        </div>  
                 </div>
+            </form>
             <hr>        
             </div>
             <div class="card-footer text-center">
@@ -61,8 +64,8 @@
             <table class="table table-dark table-hover occuranceTable text-center">
                 <thead>
                   <tr>
+                    <th>Sr. No</th>
                     <th>Number</th>
-                    <th>Occurance</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -70,6 +73,7 @@
                 </tbody>
               </table>
         </div>
+
 
     </div>
 @endsection
@@ -82,5 +86,3 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ URL::asset('js/question.js') }}"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- <script src="{{ asset('js/question.js') }}" type="text/javascript"></script> -->
