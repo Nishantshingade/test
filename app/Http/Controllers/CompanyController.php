@@ -31,7 +31,6 @@ class CompanyController extends Controller
     public function q3(Request $request)
     {
         $input = explode(",",$request->key);
-        //$input = array(3,7,4,3,3,4);
         $result = $data = $outputArray =array();
         $counter = 0;
         foreach($input as $key => $value){
