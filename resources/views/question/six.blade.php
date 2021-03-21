@@ -3,13 +3,13 @@
 <div class="container">
         <div class="card">
             <div class="card-header text-center bg-info">
-            <b>ADD NEW COMPANY</b>
+            <b>QUESTION 6</b>
             </div>
             <div class="card-body">
                   <p>6. Explain any one of the challenging modules which you have built from scratch and what you have learned from it.</p>
                   <hr>
                   <p>
-                      Answer : <br>
+                        Answer : <br>
                      <ul class="list-group">
                       <li class="list-group-item">1 . I have created Entire Software Analytics CRM from scratch in Laravel 8 and still developing the same for current organisation. Got to learn various ERP concepts / Accounting concepts and GST knowledge and implementing the same in the software. Implemented Razorpay Subscription model in the system<br>
                       Link to project : - <a href="https://crm.blumart.co.in/" target="_blank" >Blumart</a>

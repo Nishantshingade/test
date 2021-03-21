@@ -3,10 +3,15 @@
 <div class="container">
         <div class="card">
             <div class="card-header text-center bg-info">
-            <b>ADD NEW COMPANY</b>
+            <b>QUESTION 2</b>
             </div>
             <div class="card-body">
+            <div class="row">
+                <p>2. Count frequencies of all elements in an array in O(1) extra space and O(n) time Given an unsorted array of n integers which can contain integers from 1 to n. Some elements can be repeated multiple times and some other elements can be absent from the array. Count the frequency of all elements that are present and print the missing elements.</p>
+            </div>
+            <hr>
                 <div class="row">
+                
                     <div class="col-1">
                         <a href="#" class="btn btn-primary addNumber" data-id="0">0</a> 
                     </div>

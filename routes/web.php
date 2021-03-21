@@ -17,6 +17,9 @@ use App\Http\Controllers\CompanyController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function () {
+    return view('dashboard');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -41,6 +44,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/q4', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/q6', function () {
     return view('question.six');
 })->name('question.six');
+Route::middleware(['auth:sanctum', 'verified'])->get('/aws', function () {
+    return view('question.aws');
+})->name('question.aws');
 
 Route::post('/employee/create', 'App\Http\Controllers\CompanyController@store')->name('createEmployee');
 

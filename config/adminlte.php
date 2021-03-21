@@ -264,6 +264,11 @@ return [
             'url'         => 'q6',
             'icon'        => 'far fa-fw fa-file',
         ],
+        [
+            'text'        => 'AWS Installation',
+            'url'         => 'aws',
+            'icon'        => 'far fa-fw fa-file',
+        ],
         
         ['header' => 'labels'],
         [

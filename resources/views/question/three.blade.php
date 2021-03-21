@@ -3,9 +3,22 @@
 <div class="container">
         <div class="card">
             <div class="card-header text-center bg-info">
-            <b>ADD NEW COMPANY</b>
+            <b>QUESTION 3</b>
             </div>
             <div class="card-body">
+            <div class="row">
+                <p>3.  Given a one-dimension array, need to find the count of the unique set of elements.<BR>
+
+                    Input: A= [3, 7, 4, 3, 3, 4]
+A[0] = 3; A[1] = 7; A[2] = 4; A[3] = 3; A[4] = 3; A[5] = 4;
+<br>
+The first set of the index where values are the same (0, 3), (0,4),(3.4)
+The second set of the index where values are the same (2,5)
+Since value 7 didn't have a set, it won't be counted
+<br>
+Total sets = 4
+                </p>
+            </div>
                 <div class="row">
                     <div class="col-1">
                         <a href="#" class="btn btn-primary addNumber" data-id="0">0</a> 
